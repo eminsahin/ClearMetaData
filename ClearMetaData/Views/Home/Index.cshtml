@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Home";
+}
+
+<h2>UploadFile</h2>
+
+@using (Html.BeginForm("Index", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+
+    <div>
+        @Html.TextBox("file", "", new { type = "file" }) <br />
+
+        <input type="submit" value="Upload" />
+
+        @ViewBag.Message
+
+    </div>
+
+
+
+    <input type="button" id="btnpopup" value="Open Modal Popup" onclick="OpenModelPopUp();" />
+
+    <script type="text/javascript">
+        OpenModelPopUp = function () {
+            window.showModalDialog('/Home/OpenModelPopup', "WindowPopup", 'width=400px,height=400px');
+        }
+    </script>
+
+
+}
+
+@using (Html.BeginForm())
+{
+    <button name="Download" type="submit" value="DownloadFile" class="btn btn-default">Download</button>
+}
