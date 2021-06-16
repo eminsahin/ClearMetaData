@@ -1,0 +1,78 @@
+ExifTool Version Number         : 12.26
+File Name                       : istka2.pdf
+Directory                       : C:/Users/Emin/Documents/16-06-2021
+File Size                       : 3.2 MiB
+File Modification Date/Time     : 2021:06:16 16:16:37+03:00
+File Access Date/Time           : 2021:06:16 16:16:37+03:00
+File Creation Date/Time         : 2021:06:16 13:56:10+03:00
+File Permissions                : -rw-rw-rw-
+File Type                       : PDF
+File Type Extension             : pdf
+MIME Type                       : application/pdf
+PDF Version                     : 1.4
+Linearized                      : No
+XMP Toolkit                     : Adobe XMP Core 5.2-c001 63.139439, 2010/09/27-13:37:26
+Format                          : application/pdf
+Title                           : istka2
+Metadata Date                   : 2014:02:20 11:20:38+02:00
+Modify Date                     : 2014:02:20 11:20:38+02:00
+Create Date                     : 2014:02:20 11:19:57+02:00
+Creator Tool                    : Adobe Illustrator CS5.1
+Thumbnail Width                 : 220
+Thumbnail Height                : 256
+Thumbnail Format                : JPEG
+Thumbnail Image                 : (Binary data 10403 bytes, use -b option to extract)
+Instance ID                     : uuid:292f4e61-3174-f149-99c8-bfaf997fbb70
+Document ID                     : xmp.did:00801174072068118C14FDE5CCB427AD
+Original Document ID            : uuid:5D20892493BFDB11914A8590D31508C8
+Rendition Class                 : proof:pdf
+Derived From Instance ID        : uuid:acdcf747-0cea-4b4e-be63-1ad04434e734
+Derived From Document ID        : xmp.did:F77F1174072068118083E8465806E04A
+Derived From Original Document ID: uuid:5D20892493BFDB11914A8590D31508C8
+Derived From Rendition Class    : proof:pdf
+History Action                  : saved, saved, saved
+History Instance ID             : xmp.iid:F77F1174072068118083B0451A744994, xmp.iid:F77F1174072068118083E8465806E04A, xmp.iid:00801174072068118C14FDE5CCB427AD
+History When                    : 2014:02:17 16:39:28+02:00, 2014:02:20 10:01:47+02:00, 2014:02:20 11:19:33+02:00
+History Software Agent          : Adobe Illustrator CS5.1, Adobe Illustrator CS5.1, Adobe Illustrator CS5.1
+History Changed                 : /, /, /
+Manifest Link Form              : EmbedByReference, EmbedByReference, EmbedByReference, EmbedByReference, EmbedByReference, EmbedByReference
+Manifest Reference File Path    : /Volumes/NO NAME/uluslararasi-iliskiler-bolumu-dunya-haritasi-640x330.jpg, /Users/apple/Desktop/A/proline/İSTKA/2kirimli/social-media-targeting.jpg, /Users/apple/Desktop/A/resimler/ktp/GIS_NM_stackup.png, /Users/apple/Desktop/A/proline/İSTKA/3929611792757_ICBcweTd_l.psd, /Users/apple/Desktop/A/proline/İSTKA/3929611792757_ICBcweTd_l.psd, /Users/apple/Desktop/A/proline/İSTKA/3929611792757_ICBcweTd_l.psd
+Startup Profile                 : Print
+Has Visible Overprint           : True
+Has Visible Transparency        : True
+N Pages                         : 1
+Max Page Size W                 : 29.700013
+Max Page Size H                 : 20.999993
+Max Page Size Unit              : Centimeters
+Font Name                       : BebasNeue, Helvetica, Helvetica-Bold, MyriadPro-Regular
+Font Family                     : Bebas Neue, Helvetica, Helvetica, Myriad Pro
+Font Face                       : Regular, Regular, Bold, Regular
+Font Type                       : Open Type, TrueType, TrueType, Open Type
+Font Version                    : Version 1.300, 7.0d20e1, 7.0d20e1, Version 2.062;PS 2.000;hotconv 1.0.57;makeotf.lib2.0.21895
+Font Composite                  : False, False, False, False
+Font File Name                  : BebasNeue.otf, Helvetica.dfont, Helvetica.dfont, MyriadPro-Regular.otf
+Plate Names                     : Cyan, Magenta, Yellow, Black
+Swatch Group Name               : Default Swatch Group, Grays, Brights
+Swatch Group Type               : 0, 1, 1
+Swatch Colorant Swatch Name     : White, Black, CMYK Red, CMYK Yellow, CMYK Green, CMYK Cyan, CMYK Blue, CMYK Magenta, C=15 M=100 Y=90 K=10, C=0 M=90 Y=85 K=0, C=0 M=80 Y=95 K=0, C=0 M=50 Y=100 K=0, C=0 M=35 Y=85 K=0, C=5 M=0 Y=90 K=0, C=20 M=0 Y=100 K=0, C=50 M=0 Y=100 K=0, C=75 M=0 Y=100 K=0, C=85 M=10 Y=100 K=10, C=90 M=30 Y=95 K=30, C=75 M=0 Y=75 K=0, C=80 M=10 Y=45 K=0, C=70 M=15 Y=0 K=0, C=85 M=50 Y=0 K=0, C=100 M=95 Y=5 K=0, C=100 M=100 Y=25 K=25, C=75 M=100 Y=0 K=0, C=50 M=100 Y=0 K=0, C=35 M=100 Y=35 K=10, C=10 M=100 Y=50 K=0, C=0 M=95 Y=20 K=0, C=25 M=25 Y=40 K=0, C=40 M=45 Y=50 K=5, C=50 M=50 Y=60 K=25, C=55 M=60 Y=65 K=40, C=25 M=40 Y=65 K=0, C=30 M=50 Y=75 K=10, C=35 M=60 Y=80 K=25, C=40 M=65 Y=90 K=35, C=40 M=70 Y=100 K=50, C=50 M=70 Y=80 K=70, PANTONE 2758 C, PANTONE 1495 C, C=0 M=0 Y=0 K=100, C=0 M=0 Y=0 K=90, C=0 M=0 Y=0 K=80, C=0 M=0 Y=0 K=70, C=0 M=0 Y=0 K=60, C=0 M=0 Y=0 K=50, C=0 M=0 Y=0 K=40, C=0 M=0 Y=0 K=30, C=0 M=0 Y=0 K=20, C=0 M=0 Y=0 K=10, C=0 M=0 Y=0 K=5, C=0 M=100 Y=100 K=0, C=0 M=75 Y=100 K=0, C=0 M=10 Y=95 K=0, C=85 M=10 Y=100 K=0, C=100 M=90 Y=0 K=0, C=60 M=90 Y=0 K=0
+Swatch Colorant Mode            : CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK, CMYK
+Swatch Colorant Type            : PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, SPOT, SPOT, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS, PROCESS
+Swatch Colorant Cyan            : 0.000000, 0.000000, 0.000000, 0.000000, 100.000000, 100.000000, 100.000000, 0.000000, 14.999998, 0.000000, 0.000000, 0.000000, 0.000000, 5.000001, 19.999998, 50.000000, 75.000000, 85.000000, 90.000000, 75.000000, 80.000000, 70.000000, 85.000000, 100.000000, 100.000000, 75.000000, 50.000000, 35.000004, 10.000002, 0.000000, 25.000000, 39.999996, 50.000000, 55.000000, 25.000000, 30.000002, 35.000004, 39.999996, 39.999996, 50.000000, 100.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 85.000000, 100.000000, 60.000004
+Swatch Colorant Magenta         : 0.000000, 0.000000, 100.000000, 0.000000, 0.000000, 0.000000, 100.000000, 100.000000, 100.000000, 90.000000, 80.000000, 50.000000, 35.000004, 0.000000, 0.000000, 0.000000, 0.000000, 10.000002, 30.000002, 0.000000, 10.000002, 14.999998, 50.000000, 95.000000, 100.000000, 100.000000, 100.000000, 100.000000, 100.000000, 95.000000, 25.000000, 45.000000, 50.000000, 60.000004, 39.999996, 50.000000, 60.000004, 65.000000, 70.000000, 70.000000, 80.000000, 33.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 100.000000, 75.000000, 10.000002, 10.000002, 90.000000, 90.000000
+Swatch Colorant Yellow          : 0.000000, 0.000000, 100.000000, 100.000000, 100.000000, 0.000000, 0.000000, 0.000000, 90.000000, 85.000000, 95.000000, 100.000000, 85.000000, 90.000000, 100.000000, 100.000000, 100.000000, 100.000000, 95.000000, 75.000000, 45.000000, 0.000000, 0.000000, 5.000001, 25.000000, 0.000000, 0.000000, 35.000004, 50.000000, 19.999998, 39.999996, 50.000000, 60.000004, 65.000000, 65.000000, 75.000000, 80.000000, 90.000000, 100.000000, 80.000000, 0.000000, 66.999992, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 100.000000, 100.000000, 95.000000, 100.000000, 0.000000, 0.003099
+Swatch Colorant Black           : 0.000000, 100.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 10.000002, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 10.000002, 30.000002, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 25.000000, 0.000000, 0.000000, 10.000002, 0.000000, 0.000000, 0.000000, 5.000001, 25.000000, 39.999996, 0.000000, 10.000002, 25.000000, 35.000004, 50.000000, 70.000000, 26.000000, 0.000000, 100.000000, 89.999405, 79.998795, 69.999702, 59.999104, 50.000000, 39.999401, 29.998802, 19.999701, 9.999103, 4.998803, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.003099
+Swatch Colorant Tint            : 100.000000, 100.000000
+Producer                        : Adobe PDF library 9.90
+Page Count                      : 2
+Creator                         : Adobe Illustrator(R) 15.0
+AI Creator Version              : 15.1.0
+For                             : NER,
+Bounding Box                    : -458 -1115 1251 874
+AI Build Number                 : 39
+AI Color Usage                  : Color
+AI Ruler Units                  : Centimeters
+AI Color Model                  : CMYK
+AI Target Resolution            : 800
+AI Num Layers                   : 1
+Container Version               : 9
+Creator Version                 : 15

@@ -1,0 +1,28 @@
+ExifTool Version Number         : 12.26
+File Name                       : istka2.pdf
+Directory                       : C:/Users/Emin/Documents/16-06-2021
+File Size                       : 3.2 MiB
+File Modification Date/Time     : 2021:06:16 16:16:42+03:00
+File Access Date/Time           : 2021:06:16 16:16:42+03:00
+File Creation Date/Time         : 2021:06:16 13:56:10+03:00
+File Permissions                : -rw-rw-rw-
+File Type                       : PDF
+File Type Extension             : pdf
+MIME Type                       : application/pdf
+PDF Version                     : 1.4
+Linearized                      : No
+Page Count                      : 2
+Creator                         : Adobe Illustrator(R) 15.0
+AI Creator Version              : 15.1.0
+For                             : NER,
+Title                           : istka2.pdf
+Create Date                     : 2/20/14 11:19 AM
+Bounding Box                    : -458 -1115 1251 874
+AI Build Number                 : 39
+AI Color Usage                  : Color
+AI Ruler Units                  : Centimeters
+AI Color Model                  : CMYK
+AI Target Resolution            : 800
+AI Num Layers                   : 1
+Container Version               : 9
+Creator Version                 : 15

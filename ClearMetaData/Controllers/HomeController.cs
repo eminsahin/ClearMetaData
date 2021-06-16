@@ -30,9 +30,9 @@ namespace ClearMetaData.Controllers
                     string _Path = Path.Combine(dir, _FileName);
                     file.SaveAs(_Path);
                     //_Path = ClearMetaData.Models.File.FileName();
-                    
+                    MetaDataView(_FileName);
                     ExifTool(_FileName);
-
+                    CleanMetaDataView(_FileName);
                     DosyaIndir(_Path);
                     
 
@@ -148,6 +148,60 @@ namespace ClearMetaData.Controllers
             Response.SuppressContent = true;
             Response.End();
         }
+        public void MetaDataView(string fileName)
+        {
+            string Todaysdate = DateTime.Now.ToString("dd-MM-yyyy");
+            string dir = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "/" + Todaysdate;
+            string arg = dir + "\\" + fileName;
+            
+            
+            Process process = new Process();
+            System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
+            process.StartInfo = startInfo;
+            process.StartInfo.FileName = "cmd.exe";
+            process.StartInfo.Arguments = "cmd /c exiftool" + " " + arg + " " + "> C:/Users/Emin/source/repos/ClearMetaData/ClearMetaData/UploadedFiles/output.txt | type C:/Users/Emin/source/repos/ClearMetaData/ClearMetaData/UploadedFiles/output.txt";
+            process.StartInfo.UseShellExecute = false;
+            process.StartInfo.RedirectStandardOutput = true;
+            process.StartInfo.RedirectStandardError = true;
+            startInfo.Verb = "runas";
+            process.Start();
+            process.WaitForExit();
+
+            //* Read the output (or the error)
+            string Output = process.StandardOutput.ReadToEnd();
+            //Output.Split(',').LastOrDefault();
+            Response.Write(Output);
+
+            string Err = process.StandardError.ReadToEnd();
+            Response.Write(Err);
+        }
+        public void CleanMetaDataView(string fileName)
+        {
+            string Todaysdate = DateTime.Now.ToString("dd-MM-yyyy");
+            string dir = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "/" + Todaysdate;
+            string arg = dir + "\\" + fileName;
+
+
+            Process process = new Process();
+            System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
+            process.StartInfo = startInfo;
+            process.StartInfo.FileName = "cmd.exe";
+            process.StartInfo.Arguments = "cmd /c exiftool" + " " + arg + " " + "> C:/Users/Emin/source/repos/ClearMetaData/ClearMetaData/UploadedFiles/cleanoutput.txt | type C:/Users/Emin/source/repos/ClearMetaData/ClearMetaData/UploadedFiles/cleanoutput.txt";
+            process.StartInfo.UseShellExecute = false;
+            process.StartInfo.RedirectStandardOutput = true;
+            process.StartInfo.RedirectStandardError = true;
+            startInfo.Verb = "runas";
+            process.Start();
+            process.WaitForExit();
+
+            //* Read the output (or the error)
+            string Output = process.StandardOutput.ReadToEnd();
+            //Output.Split(',').LastOrDefault();
+            Response.Write(Output);
+
+            string Err = process.StandardError.ReadToEnd();
+            Response.Write(Err);
+        }
         public ActionResult DownloadFile(HttpPostedFileBase file)
         {
             return View();
@@ -195,12 +249,17 @@ namespace ClearMetaData.Controllers
             string _FileName = Path.GetFileName(file.FileName);
             string _Path = Path.Combine(dir, _FileName);
             Process process = new Process();
+            System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
+            process.StartInfo = startInfo;
             process.StartInfo.FileName = "cmd.exe";
-            process.StartInfo.Arguments = "cmd /c exiftool" + " " + _Path;
+            process.StartInfo.Arguments = "cmd /c exiftool" + " " + _Path +" "+  "> C:/Users/Emin/source\repos/ClearMetaData/ClearMetaData/UploadedFiles/output.txt | type C:/Users/Emin/source/repos/ClearMetaData/ClearMetaData/UploadedFiles/output.txt";
             process.StartInfo.UseShellExecute = false;
             process.StartInfo.RedirectStandardOutput = true;
             process.StartInfo.RedirectStandardError = true;
+            startInfo.Verb = "runas";
             process.Start();
+            process.WaitForExit();
+
             //* Read the output (or the error)
             string Output = process.StandardOutput.ReadToEnd();
             //Output.Split(',').LastOrDefault();
@@ -211,6 +270,8 @@ namespace ClearMetaData.Controllers
 
             return View();
         }
+
+    
 
         public ActionResult Contact()
         {
