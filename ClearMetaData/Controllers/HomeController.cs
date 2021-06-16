@@ -29,9 +29,11 @@ namespace ClearMetaData.Controllers
                     string _FileName = Path.GetFileName(file.FileName);
                     string _Path = Path.Combine(dir, _FileName);
                     file.SaveAs(_Path);
+                    //_Path = ClearMetaData.Models.File.FileName();
+                    
+                    ExifTool(_FileName);
 
-                    CleanMetadata(file);
-                    DownloadFile(file);
+                    DosyaIndir(_Path);
                     
 
 
@@ -40,7 +42,7 @@ namespace ClearMetaData.Controllers
 
                     
 
-                    ExifTool(_FileName);
+                    
                     
                     //return ExifTool(File);
 
@@ -49,6 +51,8 @@ namespace ClearMetaData.Controllers
                 }
 
                 Response.Write("<script lang='JavaScript'>alert('File Uploaded Succesfully!!');</script>"); // generic response model en son
+                
+                
                 return View();
             }
             catch
@@ -60,20 +64,40 @@ namespace ClearMetaData.Controllers
             
 
         }
-        
-        public string OpenModelPopup()
+
+        [HttpPost]
+        public ActionResult UploadFiles(HttpPostedFileBase files)
         {
-            //can send some data also.  
-            return "<h1>This is Modal Popup Window</h1>";
+            if (ModelState.IsValid)
+            {
+                try
+                {
+
+                    if (files != null)
+                    {
+                        string path = Path.Combine(Server.MapPath("~/UploadedFiles"), Path.GetFileName(files.FileName));
+                        files.SaveAs(path);
+
+                    }
+                    ViewBag.FileStatus = "File uploaded successfully.";
+                }
+                catch (Exception)
+                {
+
+                    ViewBag.FileStatus = "Error while file uploading.";
+                }
+
+            }
+            return View("Index");
         }
 
         [HttpPost]
-        public ActionResult Download(string fileName)
+        public ActionResult Download(string file)
         {
             string Todaysdate = DateTime.Now.ToString("dd-MM-yyyy");
             string dir = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "/" + Todaysdate;
-            string arg = dir + "\\" + fileName;
-            string _FileName = Path.GetFileName(fileName);
+            string arg = dir + "\\" + file;
+            string _FileName = Path.GetFileName(file);
             string _Path = Path.Combine(dir, _FileName);
             //PdfFiles is the name of the folder where these pdf files are located
             
@@ -99,32 +123,56 @@ namespace ClearMetaData.Controllers
             startInfo.Arguments = "/K exiftool -all= " + arg;
             startInfo.Verb = "runas";
             process.Start();
+            process.WaitForExit();
 
+
+
+        }
+
+        public void DosyaIndir(string fileName)
+        {
+            string Todaysdate = DateTime.Now.ToString("dd-MM-yyyy");
+            string dir = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "/" + Todaysdate;
+            string arg = dir + "\\" + fileName;
             string _FileName = Path.GetFileName(fileName);
             string _Path = Path.Combine(dir, _FileName);
 
-
-            byte[] fileBytes = System.IO.File.ReadAllBytes(_Path);
-            File(fileBytes, System.Net.Mime.MediaTypeNames.Application.Octet, _FileName);
-            //Response.Buffer = true;
-            //Response.AppendHeader("Content-Disposition", "attachment; filename= " + _FileName);
-            //Response.TransmitFile(_Path);
-            //Response.Flush();
-            //Response.SuppressContent = true;
-            
-            
+            Response.Clear();
+            Response.ClearHeaders();
+            //byte[] fileBytes = System.IO.File.ReadAllBytes(_Path);
+            //File(fileBytes, System.Net.Mime.MediaTypeNames.Application.Octet, _FileName);
+            Response.Buffer = true;
+            Response.AppendHeader("Content-Disposition", "attachment; filename= " + _FileName);
+            Response.TransmitFile(_Path);
+            Response.Flush();
+            Response.SuppressContent = true;
+            Response.End();
         }
-
         public ActionResult DownloadFile(HttpPostedFileBase file)
         {
+            return View();
+            
+            //string Todaysdate = DateTime.Now.ToString("dd-MM-yyyy");
+            //string dir = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "/" + Todaysdate;
+            //string _FileName = Path.GetFileName(file.FileName);
+            //string _Path = Path.Combine(dir, _FileName);
 
+            //var memory = new MemoryStream();
+            //using (var stream = new FileStream(_Path, FileMode.Open))
+            //{
+            //    stream.CopyToAsync(memory);
+            //}
+            //memory.Position = 0;
 
-            string Todaysdate = DateTime.Now.ToString("dd-MM-yyyy");
-            string dir = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "/" + Todaysdate;
-            string _FileName = Path.GetFileName(file.FileName);
-            string _Path = Path.Combine(dir, _FileName);
+           
 
-            return File(_Path, "application/pdf", _FileName);
+            //return File(memory, "application/pdf", Path.GetFileName(_Path));
+            
+            
+            //byte[] fileBytes = System.IO.File.ReadAllBytes(_Path);
+            //return File(fileBytes, System.Net.Mime.MediaTypeNames.Application.Octet, _FileName);
+
+            //return File(_Path, "application/pdf", _FileName);
 
 
             //byte[] filedata = System.IO.File.ReadAllBytes(_Path);
